@@ -1,0 +1,114 @@
+Sample assembly language instructions.
+
+Output ASCII Program:	..............................................
+
+CHARO 'H', i
+CHARO 'i', i
+STOP
+.END
+
+Output ASCII Program:	..............................................
+
+CHARO 0x000A, d
+CHARO 0x000B, d
+CHARO 0x000C, d
+STOP
+.ASCII "Pun"
+.END
+
+	
+Reverse Program:		..............................................
+
+Input (Text Area): Testing
+
+CHARI 0x0007, d ;Input 1st character
+CHARI 0x0008, d
+CHARI 0x0009, d
+CHARI 0x000A, d
+CHARI 0x000B, d
+CHARI 0x000C, d
+CHARI 0x000D, d ;Input 7th character
+
+CHARO 0x000D, d ;Output 7th character
+CHARO 0x000C, d
+CHARO 0x000B, d
+CHARO 0x000A, d
+CHARO 0x0009, d
+CHARO 0x0008, d
+CHARO 0x0007, d ;Output 1st character
+
+STOP
+
+.BLOCK 1 ;Storage for 1st character
+.BLOCK 1 ;Storage for 2nd character
+.BLOCK 1 ;Storage for 3rd character
+.BLOCK 1 ;Storage for 4th character
+.BLOCK 1 ;Storage for 5th character
+.BLOCK 1 ;Storage for 6th character
+.BLOCK 1 ;Storage for 7th character
+
+.END
+
+Sum Program (Please stay under a sum of 9): ..............................................
+
+LDA 0x0011, d ;A <- first number
+ADDA 0x0013, d ;Add the two numbers
+ORA 0x0015, d ;Convert sum to character
+STBYTEA 0x0010, d ;Store the character
+CHARO 0x0010, d ;Output the character
+STOP
+.BLOCK 1 ;Character to output
+.WORD 5 ;Decimal 5
+.WORD 3 ;Decimal 3
+.WORD 0x0030 ;Mask for ASCII char
+.END
+
+Mathematical Equation: ..............................................
+BR 0x0005
+.BLOCK 2
+DECI 0x0003, d
+DECO 0x0003, d
+CHARO '_', i
+CHARO '+', i
+CHARO '_', i
+CHARO '1', i
+CHARO '_', i
+CHARO '=', i
+CHARO '_', i
+LDA 0x0003, d
+ADDA 1, i
+STA 0x0003, d
+DECO 0x0003, d
+STOP
+.END
+
+Mathematical Equation: ..............................................
+
+BR 0x000D
+.BLOCK 2
+.ASCII "_+_1_-_\x00"
+DECI 0x0003, d
+DECO 0x0003, d
+STRO 0x0005, d
+LDA 0x0003, d
+ADDA 1, i
+STA 0x0003, d
+DECO 0x0003, d
+STOP
+.END
+
+Output: ..............................................
+
+BR 0x0009
+.WORD 0xFFFE
+.BYTE 0x00
+.BYTE 'U'
+.WORD 1136
+DECO 0x0003, d
+CHARO '\n', i
+DECO 0x0005, d
+CHARO '\n', i
+CHARO 0x0006, d
+CHARO 0x0008, d
+STOP
+.END

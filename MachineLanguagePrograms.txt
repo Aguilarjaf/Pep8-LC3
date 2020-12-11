@@ -1,0 +1,26 @@
+Sample machine language programs.
+
+Output a String:
+	Input for Object Code text area: 51 00 07 51 00 08 00 48 69 zz
+	Expected output: Hi
+	
+Reverse a String:
+	Two-letter Strings
+		Input for Object Code text area: 49 00 0D 49 00 0E 51 00 0E 51 00 0D 00 zz
+		Input for Input text area: up
+		Expected output: pu
+	
+	Four-letter Strings
+		Input for Object Code text area: 49 00 15 49 00 16 49 00 17 49 00 18 51 00 18 51 00 17 51 00 15 51 00 16 00 zz
+		Input for Input text area: IOup
+		Expected output: puIO
+		
+Sum:
+	Input for Object Code text area: 	C1 00 11 71 00 13 A1 00 15 F1 00 10 51 00 10 00 00 00 02 00 04 00 30 zz
+	Expected output: 6
+	
+	Input for Object Code text area: 	C1 00 11 71 00 13 A1 00 15 F1 00 10 51 00 10 00 00 00 05 00 03 00 30 zz
+										
+	Expected output: 8
+	
+
