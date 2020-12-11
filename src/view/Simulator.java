@@ -25,6 +25,7 @@ public class Simulator {
 			simulatorFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			
 			// Creates the controller class for the program
+			@SuppressWarnings("unused")
 			prgrmController theController = new prgrmController(simulatorFrame);
 			
 			simulatorFrame.setVisible(true);

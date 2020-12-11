@@ -3,7 +3,6 @@ package controller;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
-import model.Binary;
 import model.Decimal;
 import model.Hex;
 
@@ -18,12 +17,6 @@ import model.Hex;
  * */
 
 public class convertDataType extends prgrmController implements DocumentListener {
-	
-	/**
-	 * The Binary variable below allows us to access some of the methods in the 
-	 * Binary class.
-	 * */
-	private Binary binaryClass;
 	
 	/**
 	 * The Hex variable below allows us to access some of the methods in the 
@@ -55,7 +48,6 @@ public class convertDataType extends prgrmController implements DocumentListener
 	 * */
 	public convertDataType() {
 		super();
-		binaryClass = new Binary();
 		hexClass = new Hex();
 		decimalClass = new Decimal();
 		
@@ -73,7 +65,6 @@ public class convertDataType extends prgrmController implements DocumentListener
 	 * */
 	public convertDataType(String value) {
 		super();
-		binaryClass = new Binary();
 		hexClass = new Hex();
 		decimalClass = new Decimal();
 		
