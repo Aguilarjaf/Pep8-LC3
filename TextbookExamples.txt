@@ -1,11 +1,19 @@
-Sample assembly language instructions...
+Textbook Examples...
 
 Output ASCII Program:	..............................................
 
-CHARO 0x0007, d
-CHARO 0x0008, d
+CHARO 'H', i
+CHARO 'i', i
 STOP
-.ASCII "Hi"
+.END
+
+Output ASCII Program:	..............................................
+
+CHARO 0x000A, d
+CHARO 0x000B, d
+CHARO 0x000C, d
+STOP
+.ASCII "Pun"
 .END
 
 	
@@ -53,4 +61,55 @@ STOP
 .WORD 5 ;Decimal 5
 .WORD 3 ;Decimal 3
 .WORD 0x0030 ;Mask for ASCII char
+.END
+
+Mathematical Equation: ..............................................
+
+BR 0x0005
+.BLOCK 2
+DECI 0x0003, d
+DECO 0x0003, d
+CHARO '_', i
+CHARO '+', i
+CHARO '_', i
+CHARO '1', i
+CHARO '_', i
+CHARO '=', i
+CHARO '_', i
+LDA 0x0003, d
+ADDA 1, i
+STA 0x0003, d
+DECO 0x0003, d
+STOP
+.END
+
+Mathematical Equation: ..............................................
+
+BR 0x000D
+.BLOCK 2
+.ASCII "_+_1_-_\x00"
+DECI 0x0003, d
+DECO 0x0003, d
+STRO 0x0005, d
+LDA 0x0003, d
+ADDA 1, i
+STA 0x0003, d
+DECO 0x0003, d
+STOP
+.END
+
+Output: ..............................................
+
+BR 0x0009
+.WORD 0xFFFE
+.BYTE 0x00
+.BYTE 'U'
+.WORD 1136
+DECO 0x0003, d
+CHARO '\n', i
+DECO 0x0005, d
+CHARO '\n', i
+CHARO 0x0006, d
+CHARO 0x0008, d
+STOP
 .END
