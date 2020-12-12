@@ -11,10 +11,10 @@ import model.Hex;
 /**
  * The class below conducts the action that results from pressing the build button on
  * our simulator GUI. This class assembles assembly language instructions by breaking
- * down to opcodes and operands of the instructions provided.
+ * down the opcodes and operands of the instructions provided.
  *   
- * @author Jorge Aguilar, Nathan Stickler, Wynn Siripanich, Yangchen Zhong
- * @version October 25, 2020
+ * @author Jorge Aguilar, RJ Alabado, Dung Tran, Tiarnan Marsten
+ * @version December 8, 2020
  * */
 
 public class buildProgram extends prgrmController implements ActionListener {

@@ -1,5 +1,13 @@
 package controller;
 
+/**
+ * The class below is an enumerator class that stores all of the Pep/8
+ * mnemonics, addressing modes, register fields, and dot commands. When called,
+ * the class can return the binary instructions of those Pep/8 elements.
+ *   
+ * @author Jorge Aguilar, RJ Alabado, Dung Tran, Tiarnan Marsten
+ * @version December 8, 2020
+ * */
 public enum Mnemonics {
 	
 	STOP, RETTR, MOVSPA, MOVFLGA, BR, BRLE, BRLT, BREQ, BRNE, BRGE, BRGT, BRV, BRC,
@@ -8,7 +16,12 @@ public enum Mnemonics {
 	LDA, LDBYTEA, STA, STBYTEA, i, d, n ,s, sf, x, sx, sfx, A, X, ADDRSS, ASCII,
 	BLOCK, BURN, BYTE, END, EQUATE, WORD;
 	
-
+	/**
+	 * The method below returns the binary instructions of most of the Pep/8
+	 * mnemonics and elements.
+	 * 
+	 * @return A string of binary instructions.
+	 * */
 	public String getBinaryMnemonic(){
 		switch(this) {
 		case STOP -> 	{return 	"00000000";}
@@ -89,6 +102,12 @@ public enum Mnemonics {
 		
 	}
 	
+	/**
+	 * The method below returns a boolean value verifying if a mnemonic 
+	 * exists in Pep/8.
+	 *  
+	 * @param A boolean value verifying a mnemonic.
+	 * */
 	public boolean containsUMneumonics() {
 		switch(this) {
 		case STOP -> 	{return true;}
@@ -101,6 +120,12 @@ public enum Mnemonics {
 		}
 	}
 	
+	/**
+	 * The method below returns a boolean value verifying if a mnemonic,
+	 * ending in A, exists in Pep/8.
+	 *  
+	 * @param A boolean value verifying a mnemonic.
+	 * */
 	public boolean containsAMneumonics() {
 		switch(this) {
 		
@@ -121,6 +146,12 @@ public enum Mnemonics {
 		
 	}
 	
+	/**
+	 * The method below returns a boolean value verifying if a mnemonic,
+	 * ending in R, exists in Pep/8.
+	 *  
+	 * @param A boolean value verifying a mnemonic.
+	 * */
 	public boolean containsRMneumonics() {
 		switch(this) {
 		
@@ -142,6 +173,12 @@ public enum Mnemonics {
 		}
 	}
 	
+	/**
+	 * The method below returns a boolean value verifying if a mnemonic,
+	 * ending in AAA, exists in Pep/8.
+	 *  
+	 * @param A boolean value verifying a mnemonic.
+	 * */
 	public boolean containsAAAMneumonics() {
 		switch(this) {
 		
@@ -163,6 +200,12 @@ public enum Mnemonics {
 		
 	}
 	
+	/**
+	 * The method below returns a boolean value verifying if a mnemonic,
+	 * ending in RAAA, exists in Pep/8.
+	 *  
+	 * @param A boolean value verifying a mnemonic.
+	 * */
 	public boolean containsRAAAMneumonics() {
 		switch(this) {
 		
@@ -182,6 +225,12 @@ public enum Mnemonics {
 		
 	}
 	
+	/**
+	 * The method below returns the integer value of the 'i' or 'x'
+	 * addressing mode.
+	 * 
+	 * @return An integer value representing the 'i' or 'x' addressing mode.
+	 * */
 	public int getSingleAddrsMode() {
 		switch(this) {
 		case i -> {return 0;}
@@ -190,6 +239,13 @@ public enum Mnemonics {
 		}
 	}
 
+	/**
+	 * The method below returns a boolean value that verifies if a dot
+	 * command exists in Pep/8.
+	 * 
+	 * @param firstCommand - A dot command string.
+	 * @return A boolean value verifying a passed dot command.
+	 * */
 	public boolean containsDotCommand(String firstCommand) {
 		switch(this) {
 		

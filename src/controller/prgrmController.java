@@ -10,8 +10,8 @@ import view.SimulatorGUI;
  * accessing the data from the classes in the model package and other helper 
  * classes in the controller package.
  *   
- * @author Jorge Aguilar, Nathan Stickler, Wynn Siripanich, Yangchen Zhong
- * @version October 25, 2020
+ * @author Jorge Aguilar, RJ Alabado, Dung Tran, Tiarnan Marsten
+ * @version December 8, 2020
  * */
 
 

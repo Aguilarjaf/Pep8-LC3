@@ -6,8 +6,8 @@ package model;
  * check for equality, comparison, and return the value in a 
  * printable format.
  * 
- * @author Jorge Aguilar, Nathan Stickler, Wynn Siripanich, Yangchen Zhong
- * @version October 25, 2020
+ * @author Jorge Aguilar, RJ Alabado, Dung Tran, Tiarnan Marsten
+ * @version December 8, 2020
  * */
   
 public abstract class Number {

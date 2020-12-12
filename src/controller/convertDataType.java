@@ -12,8 +12,8 @@ import model.Hex;
  * user to provide decimal input and immediately produces the binary, hex,
  * ASCII, and opcode equivalent of that input.
  *   
- * @author Jorge Aguilar, Nathan Stickler, Wynn Siripanich, Yangchen Zhong
- * @version October 25, 2020
+ * @author Jorge Aguilar, RJ Alabado, Dung Tran, Tiarnan Marsten
+ * @version December 8, 2020
  * */
 
 public class convertDataType extends prgrmController implements DocumentListener {

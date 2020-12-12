@@ -11,8 +11,8 @@ import controller.prgrmController;
  * and displays it onto the user's screen. The GUI is the interface of
  * our Pep/8 simulator.
  *   
- * @author Jorge Aguilar, Nathan Stickler, Wynn Siripanich, Yangchen Zhong
- * @version October 25, 2020
+ * @author Jorge Aguilar, RJ Alabado, Dung Tran, Tiarnan Marsten
+ * @version December 8, 2020
  */
 public class Simulator {
 

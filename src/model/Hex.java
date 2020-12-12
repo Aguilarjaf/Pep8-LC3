@@ -5,8 +5,8 @@ package model;
  * with the hex data type and provides several methods for performing
  * hex conversions.
  * 
- * @author Jorge Aguilar, Nathan Stickler, Wynn Siripanich, Yangchen Zhong
- * @version October 25, 2020
+ * @author Jorge Aguilar, RJ Alabado, Dung Tran, Tiarnan Marsten
+ * @version December 8, 2020
  * */
   
 public class Hex extends Number {
