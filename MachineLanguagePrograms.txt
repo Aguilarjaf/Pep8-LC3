@@ -1,4 +1,4 @@
-Sample machine language programs.
+Sample machine language programs...
 
 Output a String:
 	Input for Object Code text area: 51 00 07 51 00 08 00 48 69 zz
