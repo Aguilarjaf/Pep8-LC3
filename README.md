@@ -2,7 +2,7 @@
 Final Pep/8 Simulator.
 
 This is a README document for Group 1:
-Jordge Aguilar
+Jorge Aguilar
 RJ Alabado
 Tiarnan Marsten
 Dung Tran
