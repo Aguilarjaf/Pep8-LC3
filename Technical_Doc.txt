@@ -1,0 +1,23 @@
+The goal of this project was to create a simulator that is a recreation of the Pep/8 virtual machine program. Pep/8 is an assembler and simulator itself of the von Neumann 
+machine. For our recreation, it supports a subset of functions from the original Pep/8 application, and can execute a limited amount of machine language instructions. Besides 
+functionality, we also had to create a similar GUI that represented the original Pep/8’s GUI. Overall, we had great success at meeting the requirements and creating the start of a 
+simulator that accurately represents what Pep/8 was designed to do.
+
+As part of the design process, we first had to experience using Pep/8 ourselves. After having face-time with the program, our group developed a set of preliminary questions to 
+help guide us to potential solutions and clarifications that we would be needing in the future. To formulate some solutions for this project, we also listed previous experiences, 
+such as classes taken and technologies used that would be able to help and create an easier overall process for us. Our team leader also allowed us to sign up for roles ourselves, 
+so we could assign ourselves to the role that would be most comfortable for us. These factors created an easy workflow and gave us a higher chance of success.
+
+For our GUI, because of previous classes taken and projects completed, Java Swing was the most familiar for us to create a decent looking GUI. Swing is very easy to use and can 
+easily add functionality by connecting events to the Swing elements. The GUI itself is a complete recreation of the original Pep/8. Though, the only button implemented currently 
+is the “Run” button, to allow the simulator to execute. There are also several input text boxes, but only “object code”, “input”, and “output” are functional. These GUI elements 
+were the only required ones to execute the test instructions.
+
+As we used Java Swing, we of course had to use Java to design and program the von Neumann machine. The main functionality we had to implement was printing output, reversing input, 
+and integer summation. Some other internal functionalities include creating an algorithm to convert hexadecimal to binary so that the machine code instructions can be interpreted 
+and executed, and creating an ASCII output that is readable to anyone. Using integers to store bits and arrays to store memory and instructions, we simulate the memory unit. The 
+input and output unit are simulated partly through the GUI and partly simulated internally when processing and returning the instructions. This process is very similar to the 
+fetch-execute cycle for when we determine what operation the simulator has to execute.
+
+To run our application, running the Java file will display the GUI. The “object code” box allows for the use to input hexadecimal instructions, which will then return an output in 
+the “expected output” box. Pressing the “run” button will execute the instructions and convert the input to the expected out.
