@@ -1,0 +1,13 @@
+/bin
+./bin
+bin/controller/Mnemonics.class
+bin/controller/buildProgram.class
+bin/controller/convertDataType.class
+bin/controller/prgrmController.class
+bin/controller/runProgram.class
+bin/model/Binary.class
+bin/model/Decimal.class
+bin/model/Hex.class
+bin/model/Number.class
+bin/view/Simulator.class
+bin/view/SimulatorGUI.class
